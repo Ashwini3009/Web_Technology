@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CSS Display</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .parent {
+        padding: 34px;
+        margin: 43px;
+        border: 2px solid black;
+        position: relative;
+        /* since here the position is relative the absolute will work according to this parent. */
+      }
+      .box {
+        border: 2px solid black;
+        height: 130px;
+        width: 80vw;
+        padding: 3px;
+        margin: 3px;
+      }
+
+      .box1 {
+        background-color: red;
+        /* here top bottom nothing will work because the default position is static. */
+        top: 100px;
+      }
+      .box2 {
+        background-color: blue;
+        position: relative;
+        /* here top bottom will work because the position is relative. */
+      }
+      .box3 {
+        background-color: green;
+        position: absolute;
+        /* here top bottom will work because the position is absolute.  */
+        left: 8vw;
+      }
+      .box4 {
+        background-color: yellow;
+        position: fixed;
+        top: 100px;
+        left: 2vw;
+      }
+      .box5 {
+        background-color: cyan;
+        position: sticky;
+        top: 0px;
+        position: sticky;
+        left: 25vw;
+        top: 0px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <h1>Parent Container</h1>
+
+      <div class="box box5">
+        Sticky
+        <h2>Start of Sticky Container.</h2>
+        <p>This is a Sticky container.Here we will understand Everything.</p>
+        <h2>End of Sticky box</h2>
+      </div>
+
+      <div class="box box1">
+        Static
+        <h2>Start of Static Container.</h2>
+        <p>This is a static container.Here we will understand Everything.</p>
+        <h2>End of Static box</h2>
+      </div>
+      <hr />
+      <div class="box box2">
+        Relative
+        <h2>Start of Relative Container.</h2>
+        <p>This is a Relative container.Here we will understand Everything.</p>
+        <h2>End of Relative box</h2>
+      </div>
+      <hr />
+
+      <div class="box box3">
+        Absolute
+        <h2>Start of Absolute Container.</h2>
+        <p>This is a Absolute container.Here we will understand Everything.</p>
+        <h2>End of Absolute box</h2>
+      </div>
+      <hr />
+
+      <div class="box box4">
+        Fixed
+        <h2>Start of Fixed Container.</h2>
+        <p>This is a Fixed container.Here we will understand Everything.</p>
+        <h2>End of Fixed box</h2>
+      </div>
+      <hr />
+
+      <h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+          accusantium maxime facere asperiores optio soluta consectetur itaque
+          incidunt placeat atque! Dignissimos ullam sint recusandae temporibus
+          error? Sit ab repudiandae vitae impedit mollitia dignissimos sunt
+          laboriosam molestias quidem enim provident accusantium quam autem,
+          reiciendis ipsam fugit architecto earum porro in! Deserunt, et?
+          Tempora nisi in a cupiditate enim repellat modi, saepe suscipit
+          reiciendis odit laboriosam et ratione eos repellendus incidunt
+          possimus maxime excepturi obcaecati quia? Incidunt similique laborum
+          saepe culpa sapiente facilis quas odit. Magnam tempore earum fuga
+          esse, nemo quas ea reprehenderit inventore eligendi. Cum commodi
+          doloremque quo! Fugit suscipit adipisci, cum amet repudiandae ut.
+          Architecto nesciunt accusantium aspernatur? Deserunt tempore
+          voluptates veritatis, nisi eum eveniet illo maxime aliquid soluta
+          repellendus sed, delectus quasi omnis ducimus quas! Voluptatibus
+          consequatur, sequi hic iste voluptate enim earum cum ipsam laudantium,
+          quas aliquid debitis sed ex dolor temporibus inventore quibusdam.
+          Consequatur corrupti eaque dolorum provident quibusdam itaque tempore,
+          doloremque quam ipsa omnis inventore fugit impedit error! Dolore eum
+          consectetur aperiam voluptates asperiores culpa expedita. Facilis,
+          dolor eveniet numquam officia corporis, praesentium quaerat obcaecati
+          vel, quas debitis reprehenderit dolorem commodi esse? Quas dicta quis
+          quod ducimus quisquam modi, sint excepturi ab autem quae laboriosam?
+          Neque voluptatum sit excepturi adipisci tenetur facilis illo qui eos
+          veniam et, suscipit est itaque cum, nam veritatis? Excepturi, ad eos
+          maxime, deleniti officia molestias, numquam omnis reprehenderit iure
+          nobis asperiores aut? Qui, vel autem debitis, reprehenderit placeat
+          iste aliquam totam repellendus magnam doloremque alias dolorem.
+          Blanditiis odio harum asperiores possimus culpa reiciendis amet ullam
+          illo, quos eius soluta neque similique ad cum voluptas obcaecati porro
+          labore dicta quod doloribus error magnam a doloremque! Accusantium
+          voluptatibus eligendi fugiat minus. Nostrum aperiam, voluptatibus
+          quibusdam aliquid a, explicabo recusandae adipisci, quisquam ipsam
+          omnis placeat. Esse labore est ipsum excepturi illum, placeat
+          voluptate aperiam libero laudantium perferendis odio error commodi
+          dolor? Nisi ducimus sint debitis, aliquid, magni non a, ex dignissimos
+          architecto quaerat eaque quo voluptatibus unde at aspernatur? Sint
+          eius, rem modi eveniet cumque expedita iste harum similique fuga eum
+          excepturi quisquam assumenda aspernatur ducimus, maiores laborum
+          labore quo! Necessitatibus, corrupti. Cum ut porro eum harum id enim,
+          ipsum ipsam assumenda nam minus vel. Quisquam necessitatibus ipsum
+          porro distinctio facilis tempora. Voluptatem reprehenderit illum illo?
+          Veritatis ut accusamus inventore aperiam officia tempora ea vel,
+          aliquid exercitationem mollitia distinctio soluta delectus assumenda
+          iusto! Repudiandae beatae necessitatibus corrupti ab animi fugit
+          accusantium molestias magni! Ea nulla hic optio unde ducimus possimus
+          reprehenderit aliquid inventore architecto velit eveniet corrupti
+          maxime harum quasi aperiam repudiandae, repellat at explicabo impedit
+          rerum atque dolorem sint fugiat suscipit. Ex voluptatibus repellat
+          tempore placeat quas quisquam ut. Ex dolore dolorum soluta tenetur?
+          Quas cupiditate in similique voluptate assumenda laborum possimus ab
+          beatae officiis sed! Quos quidem incidunt, dicta reiciendis itaque
+          cupiditate maiores ipsa ex iure soluta pariatur quae, repellat dolorem
+          laborum. Ipsa quidem aliquam error velit quis ducimus enim
+          reprehenderit optio facilis repudiandae saepe fuga illo, dolorem
+          veritatis ullam nesciunt consequuntur quam reiciendis? Nobis
+          perspiciatis harum tempora dolorem reiciendis eius?
+        </p>
+      </h1>
+    </div>
+  </body>
+</html>
